@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- !custom Font Awasome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <header>
+      <!--! my to do list head tag start -->
+      <h1>MY TO DO LİST</h1>
+    </header>
+    <!--! my to do list head tag end -->
+    <!--! my to do list main tag start -->
+    <form action="">
+      <div class="search">
+        <input type="text" class="todo-input" placeholder="add.." />
+        <button class="todo-button" type="submit">
+          <i class="fas fa-plus-circle"></i>
+        </button>
+      </div>
+      <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+      </div>
+    </form>
+    <div class="todo-container">
+      <ul class="todo-list">
+        <div class="todo">
+          <!-- <button class="complete-btn">
+            <i class="fas fa-check-circle"></i>
+          </button>
+          <li class="todo-item">deneme</li>
+          <button class="trash-btn">
+            <i class="fa fa-minus-circle"></i>
+          </button> -->
+        </div>
+      </ul>
+    </div>
+
+    <!--! my to do list main tag end -->
+
+    <!-- ! alert box start -->
+
+    <div class="alert-wrapper">
+      <div class="alert-succes">
+        <div>Ekleme Başarılı</div>
+      </div>
+      <div class="alert-warning">
+        <div>İnput alanı boş geçilemez !</div>
+      </div>
+    </div>
+
+    <!-- ! alert box end -->
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(131, 58, 180);
+  background: radial-gradient(
+    circle,
+    #42046bf3 0%,
+    rgba(253, 132, 29, 0.07243460764587528) 0%,
+    rgba(27, 17, 167, 0.493) 100%
+  );
+  height: 100vh;
+}
+
+header h1 {
+  color: #f00d0d;
+  margin: 5rem 0;
+  font-size: 3rem;
+}
+header,
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  position: relative;
+}
+form .search {
+  display: flex;
+}
+form button,
+form input {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background-color: #fff;
+  outline: none;
+}
+form button {
+  color: #fff;
+  background-color: #395899;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #fff;
+  color: #395899;
+}
+.select {
+  position: relative;
+  margin: 1rem;
+  overflow: hidden;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  width: 10rem;
+  padding: 1rem;
+  cursor: pointer;
+  color: #395899;
+}
+.select::after {
+  content: "\25bc";
+  position: absolute;
+  background-color: #395899;
+  color: #fff;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  pointer-events: none;
+}
+.select:hover::after {
+  background-color: #fff;
+  color: #395899;
+}
+.todo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+.todo {
+  margin: 0.5rem;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s all ease;
+}
+.todo li {
+  padding: 0 0.5rem;
+  width: 100%;
+}
+.complete-btn,
+.trash-btn {
+  background-color: #960303;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.complete-btn {
+  background-color: #0b8793;
+}
+
+.fa-check-circle,
+.fa-minus-circle {
+  font-size: 1.5rem;
+  pointer-events: none;
+
+}
+
+/* ! alert CSS */
+.alert-wrapper {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+}
+
+.alert-succes,
+.alert-warning {
+  padding: 1rem;
+  color: #fff;
+  font-weight: bold;
+  width: 25rem;
+  text-align: center;
+  display: none;
+}
+.alert-warning {
+  background-color: #dc3545;
+}
+.alert-succes {
+  background-color: #5ebe92;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(360deg);
+    opacity: 0;
+}
+.completed{
+    opacity: .5;
+    text-decoration: line-through;
+}
